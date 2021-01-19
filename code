@@ -12,6 +12,13 @@ async def on_ready():
     
 @client.command()
 async def ping(ctx):
-  await ctx.send("Pong!.") #When you write !ping (!= The prefix)
+  await ctx.send("Pong!.") #When you write !ping (!= The prefix) it responds with Pong!.
+
+#Explanation for what I wrote.
+#client.event is something we can't use as a user (It just happens) and client.command is something that we can use (<prefix> <command name>.)
+#Basically 'async def <command name>(<args>):'
+#: means that we wanna refer to what we typed before the ":".)
+#I don't think I need to explain what await is, it's just kinda obvious.
+#ctx(context).send("<Message>. That means, When ever someone is gonna run the bot's prefix and then the command name, the bot is gonna respond with the message your typed in the ().
   
   client.run("TOKEN")

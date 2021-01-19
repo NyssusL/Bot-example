@@ -1,0 +1,17 @@
+import discord
+from discord.ext import commands
+from discord.utils import get
+from discord.ext.commands import bot
+
+client = commands.Bot(command_prefix="!")
+
+@client.event
+async def on_ready():
+    print("hello there")
+    (Can do a custom status right here).
+    
+@client.command()
+async def ping(ctx):
+  await ctx.send("Pong!.") #When you write !ping (!= The prefix)
+  
+  client.run("TOKEN")
